@@ -1,0 +1,11 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: Boot_Mini_Proj11_Profiles-Multple_YML-Files
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/ORCL
+    username: 'system  '
+    password: 'tiger '
