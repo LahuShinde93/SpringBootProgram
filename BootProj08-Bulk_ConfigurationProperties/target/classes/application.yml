@@ -1,0 +1,27 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: BootProj08-DiffrentConfigurationProperties
+org:
+  nit:
+    customerName: Lahu
+    customerId: 101
+    customerAddress: Hyd
+    favColors:
+    - red
+    - green
+    - blue
+    - yellow
+    nickNames:
+    - rahul
+    - munna
+    - bunty
+    phoneNumbers:
+    - 93701527
+    - 97302954
+    idDetails:
+      aadharid: 204059
+      voterid: 84BS84
+      passportno: IND598423
