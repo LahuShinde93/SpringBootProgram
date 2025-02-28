@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: Boot_Mini_Proj11_Profiles-Multple_YML-Files
+  profiles:
+    active: dev
+
+---
+# Define dev profile
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///ntspbms717db
+    username: root
+    password: root
+
+---
+# Define test profile
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///ntspbms717db
+    username: root
+    password: root
+    type: com.mchange.v2.c3p0.ComboPooledDataSource  # Fixed spelling
+
+---
+# Define prod profile
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver  # Fixed driver name
+    url: jdbc:oracle:thin:@localhost:1521:ORCL  # Fixed URL format
+    username: system
+    password: tiger
+
+---
+# Define uat profile
+spring:
+  config:
+    activate:
+      on-profile: uat
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver  # Fixed driver name
+    url: jdbc:oracle:thin:@localhost:1521:ORCL  # Fixed URL format
+    username: system
+    password: tiger
